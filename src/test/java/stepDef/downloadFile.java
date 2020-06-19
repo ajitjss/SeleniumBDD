@@ -22,7 +22,7 @@ public class downloadFile {
         WebDriverManager.chromedriver().version("83.0.4103.61").setup();
         ChromeOptions options = new ChromeOptions();
         Map<String, String> chromePref = new HashMap<String, String>();
-        String downloadFolder = "C:\\Users\\ajit\\Desktop\\Chinees";
+        String downloadFolder = "C:\\Users\\ajit\\Desktop\\Chinees\\";
         chromePref.put("download.default_directory", downloadFolder);
         options.setExperimentalOption("prefs", chromePref);
         WebDriver driver = new ChromeDriver(options);
